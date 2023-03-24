@@ -1,0 +1,38 @@
+.headerWrap .left-manu {
+  margin-right: auto;
+}
+
+.show-mobile-manu svg {
+  color: #fff;
+}
+.mobile-manu-item {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: #151c25;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.mobile-manu-item .top-mobile-manu {
+  padding-top: 4rem;
+}
+.mobile-manu-item .top-mobile-manu button {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #3265ff;
+}
+.mobile-manu-item .bottom-mobile-manu {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+  + .MuiSwitch-track {
+  background-color: #3265ff !important;
+  opacity: 1 !important;
+}
