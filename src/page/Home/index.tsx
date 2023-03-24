@@ -1,4 +1,4 @@
-import { Box, Stack } from '@mui/material'
+import { Stack } from '@mui/material'
 import Typography from '@mui/material/Typography'
 import { Fragment } from 'react'
 import InfoRoundedIcon from '@mui/icons-material/InfoRounded';

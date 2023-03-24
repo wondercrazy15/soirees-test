@@ -1,7 +1,6 @@
 import { Box, Stack } from "@mui/material"
 import Typography from "@mui/material/Typography"
 import UkFlagImage from "../../../assets/image/uk.png"
-import twitterImage from "../../../assets/image/twitter.png"
 import './footer.css'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
