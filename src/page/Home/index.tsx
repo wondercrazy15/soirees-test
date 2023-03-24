@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material'
 import Typography from '@mui/material/Typography'
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import InfoRoundedIcon from '@mui/icons-material/InfoRounded';
 import './home.css'
 import Button from '@mui/material/Button';
@@ -13,14 +13,17 @@ const BootstrapTooltip = styled(({ className, ...props }: TooltipProps) => (
     <Tooltip {...props} arrow classes={{ popper: className }} />
 ))(({ theme }) => ({
     [`& .${tooltipClasses.arrow}`]: {
-        color: theme.palette.common.black,
+        color: "#202a37",
     },
     [`& .${tooltipClasses.tooltip}`]: {
-        backgroundColor: theme.palette.common.black,
+        backgroundColor: "#202a37",
+        borderRadius: '10px',
+        boxShadow: '0 0 8px 1px #000000',
     },
 }));
 
 const InfoTootlTip = () => {
+
     return (
         <Fragment>
             <Stack className='info-tooltip'>
@@ -56,6 +59,11 @@ const InfoTootlTip = () => {
     )
 }
 const HomePage = () => {
+    const [openTooltip, setOpenTooltip] = useState(false)
+
+    const handlerTooltip = () => {
+        setOpenTooltip(!openTooltip)
+    }
     return (
         <Fragment>
             <Stack className='homeWrap'>
@@ -69,7 +77,7 @@ const HomePage = () => {
                         </Typography>
                     </Stack>
                     <Stack className='banner-info-icon'>
-                        <BootstrapTooltip title={<InfoTootlTip />}>
+                        <BootstrapTooltip open={openTooltip} title={<InfoTootlTip />} onClick={handlerTooltip}>
                             <InfoRoundedIcon />
                         </BootstrapTooltip>
                     </Stack>

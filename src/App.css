@@ -45,7 +45,9 @@
 /* Mobile View */
 
 @media (min-width: 992px) {
-  .show-mobile-manu {display: none !important;}
+  .show-mobile-manu {
+    display: none !important;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -56,9 +58,10 @@
   }
 }
 
-
 @media (max-width: 991px) {
-  .headerWrap .right-manu {display: none;}
+  .headerWrap .right-manu {
+    display: none;
+  }
   .find-my-pictures {
     padding: 2rem !important;
     /* margin: 0 1rem !important; */
@@ -69,14 +72,30 @@
     left: 50%;
     transform: translate(-50%, 0);
   }
-  .find-my-pictures .find-left h3 {font-size: 2.2rem;margin-bottom: 1.5rem;}
-  .find-my-pictures .find-right {width: 100%;}
-  .find-my-pictures .find-right button {padding: 1rem;border-radius: 8px;}
-  .footer .ukFlag {display: none;}
+  .find-my-pictures .find-left h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .find-my-pictures .find-right {
+    width: 100%;
+  }
+  .find-my-pictures .find-right button {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .footer .ukFlag {
+    display: none;
+  }
   .footer .copy-right-div {
     flex-wrap: wrap;
+    text-align: center;
   }
-  .footer .copy-right-div p, .footer .copy-right-div .social-icons {width: 100%;margin: 8px 0;}
+  .footer .copy-right-div p,
+  .footer .copy-right-div .social-icons {
+    width: 100%;
+    margin: 8px 0;
+    justify-content: center;
+  }
   .homeWrap .banner-info-icon {
     text-align: center !important;
     margin-top: 2rem !important;

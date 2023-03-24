@@ -90,11 +90,17 @@ function Header() {
                 {openManu &&
                     <Stack className='mobile-manu-item'>
                         <Stack className='top-mobile-manu'>
-                            <Button variant="contained" sx={{ textTransform: "none", marginRight: "15px", borderRadius: "10px" }}>I'm  a photographer</Button>
-                            <Button variant="contained" sx={{ textTransform: "none", borderRadius: "10px" }}>I'm a partner</Button>
+                            <Button variant="contained" sx={{ textTransform: "none", marginRight: "15px", borderRadius: "10px" }}
+                                onClick={() => setOpenManu(false)}
+                            >I'm  a photographer</Button>
+                            <Button variant="contained" sx={{ textTransform: "none", borderRadius: "10px" }}
+                                onClick={() => setOpenManu(false)}
+                            >I'm a partner</Button>
                         </Stack>
                         <Stack className='bottom-mobile-manu'>
-                            <IconButton edge="end">
+                            <IconButton edge="end"
+                                onClick={() => setOpenManu(false)}
+                            >
                                 <FormControlLabel
                                     control={<Android12Switch defaultChecked />}
                                     label=""
@@ -108,6 +114,7 @@ function Header() {
                                     height: "20px",
                                     objectFit: "fill",
                                 }}
+                                onClick={() => setOpenManu(false)}
                             />
                         </Stack>
                     </Stack>
